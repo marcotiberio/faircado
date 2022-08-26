@@ -1,0 +1,57 @@
+<div class="flyntComponent" is="flynt-navigation-footer-columns">
+  <div class="container boxed">
+    <div class="columns gridLayout">
+      <div class="columns-menu">
+        {% include "Partials/_menu.twig" with { items: menu.items } %}
+        {# <div class="social">
+          {% if social %}
+            <ul class="socialList">
+              {% for socials in social %}
+                <li class="socialList-item">
+                  <a class="socialList-link" href="{{ socials.url }}" aria-label="{{ socials.platform.label }}">
+                    {{ socials.platform.label }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div> #}
+        {# {% if logotype %}
+        <div class="logotype">
+          <figure class="figure">
+            <img class="figure-image lazyload" src="{{ logotype.src|resize(540) }}">
+          </figure>
+        </div>
+        {% endif %} #}
+        {# <div class="credits-supporters">
+          <div class="supporters">
+            <p>Supported by</p>
+            <ul class="supportersList">
+              {% for item in repeaterSupporters %}
+                <li class="socialList-item">
+                  <a href="{{ item.supporterLink }}" rel="noreferrer noopener" target="_blank">
+                    <figure class="figure">
+                      <img class="figure-image lazyload" src="{{ item.image.src|resize(540) }}">
+                    </figure>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="credits">
+            {{ socialContentHtml|e('wp_kses_post') }}
+          </div>
+        </div> #}
+      </div>
+      <div class="columns-info">
+        <div class="logo">
+          <img class="logo-image" src="{{ logoFooter }}" alt="{{ logoFooter.alt }}">
+        </div>
+      </div>
+      <div class="columns-newsletter">
+        Newsletter
+      </div>
+    </div>
+    {# {% include 'Partials/_backtotop.twig' %} #}
+  </div>
+</div>
